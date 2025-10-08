@@ -131,8 +131,112 @@
 //else
 //    Console.WriteLine("Even Number");
 
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine($"Item: {i}");
-}
+//for (int i = 1; i <= 10; i++)
+//{
+//    Console.WriteLine($"Item: {i}");
+//}
+
+
+
+
+//Console.WriteLine("Enter years of service: ");
+//int yearsOfServices = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter your salary: ");
+//int salary = Convert.ToInt32(Console.ReadLine());
+//int bonus = 0;
+
+
+//if(yearsOfServices >= 2)
+//{
+
+//    if(salary <= 50000)
+//    {
+//        bonus = 5000;
+//    }
+//    else if(salary > 50000 && salary <= 100000)
+//    {
+//        bonus = 4000;
+//    }
+//    else
+//    {
+//        bonus = 3000;
+//    }
+//    Console.WriteLine($"You are eligible for bonus: {bonus}");
+
+
+
+//}
+//else
+//{
+//    Console.WriteLine("You are not eligible for bonus");
+//}
+
+
+
+
+
+//int[] numbers = { 23, 45, 67, 89, 12 };
+
+//foreach (var item in numbers)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+//int[] numbers = new int[2] {12, 12};
+
+//numbers[0] = 23;
+//numbers[1] = 45;
+//numbers[2] = 67;
+//numbers[3] = 89;
+//numbers[4] = 12;
+//numbers[5] = 100; // This will cause an IndexOutOfRangeException
+
+//numbers = [23, 45];
+
+//numbers = [23, 45, 67, 89, 12];
+
+
+
+//foreach (var item in numbers)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+
+//string[] names = new string[3];
+//names = ["Arif", "Khan", "Developer", "Age: 23","hello"];
+
+
+
+
+//foreach(var item in names)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+
+//Multidimensional array 
+//int[,] numbers = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+
+//foreach(int number in numbers)
+//{
+//    Console.WriteLine(number);
+//}
+
+//Jagged Array
+//int[][] numbers = new int[3][];
+//numbers[0] = new int[2] { 1, 2 };
+//numbers[1] = new int[3] { 3, 4, 5 };
+//numbers[2] = new int[4] { 6, 7, 8, 9 };
+//foreach (var arr in numbers)
+//{
+//    foreach (var item in arr)
+//    {
+//        Console.WriteLine(item);
+//    }
+//}
+
 

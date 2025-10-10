@@ -240,3 +240,77 @@
 //}
 
 
+
+
+//int[] arr = [1, 3, 4, 6, 7, 78];
+
+
+// foreach (var item in arr)
+//{
+//    Console.WriteLine(item);
+//}
+
+// Console.WriteLine(String.Join(", ",arr));
+
+
+//int[] numbers = new int[2] { 23, 45 };
+
+//numbers = [ ..numbers, 28, 46, 67, 43 ];
+
+//numbers[0] = 100;
+//numbers[1] = 2300;
+//numbers[2] = 3400;
+//numbers[3] = 4500;
+//numbers[4] = 5600;
+//numbers[5] = 6700;
+//numbers[6] = 3500;
+//numbers[7] = 3500;
+//numbers[8] = 3500;
+//numbers[9] = 3500;
+//numbers[10] = 3500;
+
+
+
+//foreach (var item in numbers)
+//{
+//    Console.WriteLine(item);
+//}
+
+//int[] nums = [1, 2, 3, 4, 5];
+//int[] nums = [3, 4, 5,1, 2, 3];
+
+//Console.WriteLine(nums.Length); ---> for length of array
+//Console.WriteLine(nums.Contains(4)); ---> to check if array contains a value
+//Console.WriteLine(Array.IndexOf(nums,4)); ---> to get index of a value
+//Array.Clear(nums); ---> to clear all values in array
+//Console.WriteLine(String.Join(", ", nums)); ---> to print array values
+//Array.Sort(nums); ---> to sort array in ascending order
+//Console.WriteLine(String.Join(" - ",nums)); ---> to print array values with custom separator
+//Console.WriteLine(String.Join(" , ", nums.Reverse())); ---> to print array values in reverse order
+//Console.WriteLine(String.Join(" , ", nums.Distinct())); ---> to print distinct values in array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

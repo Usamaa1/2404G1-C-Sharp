@@ -290,19 +290,75 @@
 //Console.WriteLine(String.Join(" , ", nums.Distinct())); ---> to print distinct values in array
 
 
+// List
+//List<int> numbers = new List<int>() { 23, 45, 67, 89, 12 };
+
+//numbers.Add(100); --> to add elements in List
+//numbers.Clear(); --> to Clear all elements from list
+//numbers.RemoveAll(a => a > 50); --> to Remove elements from list according to specific condition
+//numbers.Remove(12); --> to Remove specific element from list
+//Console.WriteLine(numbers.Contains(67)); --> to check if element is present in a list or not
+//numbers.RemoveAt(4); --> to remove element from list according to indexes
+
+
+//foreach (var number in numbers)
+//{
+//    Console.WriteLine(number);
+//}
+
+
+//List<String> names = ["Arif", "Zahid", "Haris","Hina"];
+
+//foreach (String name in names)
+//{
+//Console.WriteLine(names);
+//}
+
+
+
+
+//*********************************************
+//*********************************************
+//************ CLASSES AND OOP'S **************
+//*********************************************
+//*********************************************
 
 
 
 
 
 
+//Person person1 =  new(); --> Object Initialization
+//person1.name = "zahid"; --> Property Initialization
+//person1.age = 24;
+//person1.height = 60;
+//person1.weight = 70;
+//person1.gender = "Male";
+
+
+//Person person1 = new() --> Object Initialization with Property Initialization
+//{
+//    name = "Arif",
+//    age = 10,
+//    gender = "Male",
+//    height = 10,
+//    weight = 1,
+
+//};
+
+//Console.WriteLine($"Person name: {person1.name}, Person Age: {person1.age}, Person Height: {person1.height}, Person Weight: {person1.weight}");
 
 
 
-
-
-
-
+// Creating Class named Person
+class Person 
+{
+   public string name;
+   public int age;
+   public string gender;
+   public double height;
+   public double weight;
+}
 
 
 

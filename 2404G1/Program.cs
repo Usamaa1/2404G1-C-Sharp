@@ -351,22 +351,60 @@
 
 
 // Creating Class named Person
-class Person 
+//class Person 
+//{
+//   public string name;
+//   public int age;
+//   public string gender;
+//   public double height;
+//   public double weight;
+//}
+
+
+
+
+
+
+
+
+
+
+//List<int> numbers = new List<int>() { 23, "45", 67, 89, 12 };
+
+
+List<Mobile> mobiles = new()
 {
-   public string name;
-   public int age;
-   public string gender;
-   public double height;
-   public double weight;
+    new Mobile()
+    {
+        brand = "Apple",
+        model = "iPhone 13",
+        price = 999.99
+    },
+    new Mobile()
+    {
+        brand = "Google",
+        model = "Pixel 6",
+        price = 599.99
+    },
+    new Mobile()
+    {
+        brand = "OnePlus",
+        model = "9 Pro",
+        price = 729.99
+    }
+};
+
+foreach (var mobile in mobiles)
+{
+    Console.WriteLine($"Brand: {mobile.brand}, Model: {mobile.model}, Price: {mobile.price}");
 }
 
-
-
-
-
-
-
-
+class Mobile
+{
+    public string brand;
+    public string model;
+    public double price;
+}
 
 
 

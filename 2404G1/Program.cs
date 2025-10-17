@@ -372,39 +372,136 @@
 //List<int> numbers = new List<int>() { 23, "45", 67, 89, 12 };
 
 
-List<Mobile> mobiles = new()
-{
-    new Mobile()
-    {
-        brand = "Apple",
-        model = "iPhone 13",
-        price = 999.99
-    },
-    new Mobile()
-    {
-        brand = "Google",
-        model = "Pixel 6",
-        price = 599.99
-    },
-    new Mobile()
-    {
-        brand = "OnePlus",
-        model = "9 Pro",
-        price = 729.99
-    }
-};
+//List<Mobile> mobiles = new()
+//{
+//    new Mobile()
+//    {
+//        brand = "Apple",
+//        model = "iPhone 13",
+//        price = 999.99
+//    },
+//    new Mobile()
+//    {
+//        brand = "Google",
+//        model = "Pixel 6",
+//        price = 599.99
+//    },
+//    new Mobile()
+//    {
+//        brand = "OnePlus",
+//        model = "9 Pro",
+//        price = 729.99
+//    }
+//};
 
-foreach (var mobile in mobiles)
-{
-    Console.WriteLine($"Brand: {mobile.brand}, Model: {mobile.model}, Price: {mobile.price}");
-}
+//foreach (var mobile in mobiles)
+//{
+//    Console.WriteLine($"Brand: {mobile.brand}, Model: {mobile.model}, Price: {mobile.price}");
+//}
 
-class Mobile
+//class Mobile
+//{
+//    public string brand;
+//    public string model;
+//    public double price;
+//}
+
+
+
+//*********************************************
+// constructor functions
+// constructors are special methods that are called when an object of a class is created.
+//*********************************************
+
+
+//Toyota car1 = new Toyota("Corolla", 2020, "Red");
+
+//Console.WriteLine($"Car Model: {car1.model}, Year: {car1.year}, Color: {car1.color}");
+
+//class Toyota
+//{
+//    public string model;
+//    public int year;
+//    public string color;
+//    // Constructor
+//    public Toyota(string model, int year, string color)
+//    {
+//        // this is used to refer to the current instance of the class
+
+//        this.model = model;
+//        this.year = year;
+//        this.color = color;
+//    }
+//}
+
+
+// 2nd Example of Constructor
+
+
+//Toyota car1 = new Toyota("Corolla", 2020, "Red");
+
+//Console.WriteLine($"Car Model: {car1.model}, Year: {car1.year}, Color: {car1.color}");
+
+//class Toyota(string model, int year, string color)
+//{
+//    public string model = model;
+//    public int year = year;
+//    public string color = color;
+//}
+
+
+// 3rd Example of Constructor with Overloading
+// overloading is a concept where a class can have multiple constructors with different parameters.
+
+Suzuki car1 = new Suzuki("Swift", 2021, "Blue");
+Console.WriteLine($"Car Model: {car1.model}, Year: {car1.year}, Color: {car1.color}");
+
+Suzuki car2 = new Suzuki("Dzire", "White");
+Console.WriteLine($"Car Model: {car2.model}, Color: {car2.color}");
+
+Suzuki car3 = new Suzuki("Baleno", 2022);
+Console.WriteLine($"Car Model: {car3.model}, Year: {car3.year}");
+
+Suzuki car4 = new Suzuki("Ciaz");
+Console.WriteLine($"Car Model: {car4.model}");
+
+
+
+
+class Suzuki
 {
-    public string brand;
     public string model;
-    public double price;
+    public int year;
+    public string color;
+    // Constructor
+    public Suzuki(string model, int year, string color)
+    {
+        // this is used to refer to the current instance of the class
+        this.model = model;
+        this.year = year;
+        this.color = color;
+    }
+
+    public Suzuki(string model, string color)
+    {
+        this.model = model;
+        this.color = color;
+    }
+
+    public Suzuki(string model, int year)
+    {
+        this.model = model;
+        this.year = year;
+    }
+    public Suzuki(string model)
+    {
+        this.model = model;
+    }
 }
+
+
+
+
 
 
 

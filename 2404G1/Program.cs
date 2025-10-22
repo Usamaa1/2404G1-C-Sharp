@@ -453,51 +453,125 @@
 // 3rd Example of Constructor with Overloading
 // overloading is a concept where a class can have multiple constructors with different parameters.
 
-Suzuki car1 = new Suzuki("Swift", 2021, "Blue");
-Console.WriteLine($"Car Model: {car1.model}, Year: {car1.year}, Color: {car1.color}");
 
-Suzuki car2 = new Suzuki("Dzire", "White");
-Console.WriteLine($"Car Model: {car2.model}, Color: {car2.color}");
+//Suzuki car2 = new Suzuki("Dzire", "White");
+//Console.WriteLine($"Car Model: {car2.model}, Color: {car2.color}");
 
-Suzuki car3 = new Suzuki("Baleno", 2022);
-Console.WriteLine($"Car Model: {car3.model}, Year: {car3.year}");
+//Suzuki car3 = new Suzuki("Baleno", 2022);
+//Console.WriteLine($"Car Model: {car3.model}, Year: {car3.year}");
 
-Suzuki car4 = new Suzuki("Ciaz");
-Console.WriteLine($"Car Model: {car4.model}");
+//Suzuki car1 = new Suzuki("Swift", 2021, "Blue");
+//Console.WriteLine($"Car Model: {car1.model}, Year: {car1.year}, Color: {car1.color}");
+
+//Suzuki car4 = new Suzuki("Ciaz");
+//Console.WriteLine($"Car Model: {car4.model}");
 
 
 
 
-class Suzuki
+//class Suzuki
+//{
+//    public string model;
+//    public int year;
+//    public string color;
+//    // Constructor
+//    public Suzuki(string model, int year, string color)
+//    {
+//        // this is used to refer to the current instance of the class
+//        this.model = model;
+//        this.year = year;
+//        this.color = color;
+//    }
+
+//    public Suzuki(string model, string color)
+//    {
+//        this.model = model;
+//        this.color = color;
+//    }
+
+//    public Suzuki(string model, int year)
+//    {
+//        this.model = model;
+//        this.year = year;
+//    }
+//    public Suzuki(string model)
+//    {
+//        this.model = model;
+//    }
+//}
+
+
+
+
+
+//*********************************************
+// Inheritance in C#
+// Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (derived class) to inherit properties and methods from another class (base class).
+//*********************************************
+
+Dog dog1 = new();
+dog1.name = "Buddy";
+dog1.age = 3;
+dog1.breed = "Golden Retriever";
+dog1.Eat();
+dog1.Bark();
+
+Cat cat1 = new();
+cat1.name = "Whiskers";
+cat1.age = 2;
+cat1.color = "Gray";
+cat1.Eat();
+cat1.Meow();
+
+SpanishCat spanishCat1 = new();
+spanishCat1.name = "Gato";
+spanishCat1.age = 4;
+spanishCat1.color = "Black";
+spanishCat1.Eat();
+spanishCat1.Meow();
+spanishCat1.SpeakSpanish();
+
+class Animal
 {
-    public string model;
-    public int year;
-    public string color;
-    // Constructor
-    public Suzuki(string model, int year, string color)
+    public string name;
+    public int age;
+    public void Eat()
     {
-        // this is used to refer to the current instance of the class
-        this.model = model;
-        this.year = year;
-        this.color = color;
-    }
-
-    public Suzuki(string model, string color)
-    {
-        this.model = model;
-        this.color = color;
-    }
-
-    public Suzuki(string model, int year)
-    {
-        this.model = model;
-        this.year = year;
-    }
-    public Suzuki(string model)
-    {
-        this.model = model;
+        Console.WriteLine($"{name} is eating.");
     }
 }
+class Dog : Animal
+{
+    public string breed;
+    public void Bark()
+    {
+
+        Console.WriteLine($"{name} is barking.");
+    }
+}
+class Cat : Animal
+{
+    public string color;
+    public void Meow()
+    {
+        Console.WriteLine($"{name} is meowing.");
+    }
+}
+
+// multilevel Inheritance
+// multilevel inheritance is a type of inheritance where a class is derived from a class which is also derived from another class.
+
+class SpanishCat : Cat
+{
+    public void SpeakSpanish()
+    {
+        Console.WriteLine($"{name} dice miau.");
+    }
+}
+
+
+// multiple Inheritance is not supported in C# using classes
+
 
 
 

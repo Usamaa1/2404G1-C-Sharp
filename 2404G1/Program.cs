@@ -509,73 +509,228 @@
 // Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class (derived class) to inherit properties and methods from another class (base class).
 //*********************************************
 
-Dog dog1 = new();
-dog1.name = "Buddy";
-dog1.age = 3;
-dog1.breed = "Golden Retriever";
-dog1.Eat();
-dog1.Bark();
+//Dog dog1 = new();
+//dog1.name = "Buddy";
+//dog1.age = 3;
+//dog1.breed = "Golden Retriever";
+//dog1.Eat();
+//dog1.Bark();
 
-Cat cat1 = new();
-cat1.name = "Whiskers";
-cat1.age = 2;
-cat1.color = "Gray";
-cat1.Eat();
-cat1.Meow();
+//Cat cat1 = new();
+//cat1.name = "Whiskers";
+//cat1.age = 2;
+//cat1.color = "Gray";
+//cat1.Eat();
+//cat1.Meow();
 
-SpanishCat spanishCat1 = new();
-spanishCat1.name = "Gato";
-spanishCat1.age = 4;
-spanishCat1.color = "Black";
-spanishCat1.Eat();
-spanishCat1.Meow();
-spanishCat1.SpeakSpanish();
+//SpanishCat spanishCat1 = new();
+//spanishCat1.name = "Gato";
+//spanishCat1.age = 4;
+//spanishCat1.color = "Black";
+//spanishCat1.Eat();
+//spanishCat1.Meow();
+//spanishCat1.SpeakSpanish();
 
-class Animal
-{
-    public string name;
-    public int age;
-    public void Eat()
-    {
-        Console.WriteLine($"{name} is eating.");
-    }
-}
-class Dog : Animal
-{
-    public string breed;
-    public void Bark()
-    {
+//class Animal
+//{
+//    public string name;
+//    public int age;
+//    public void Eat()
+//    {
+//        Console.WriteLine($"{name} is eating.");
+//    }
+//}
+//class Dog : Animal
+//{
+//    public string breed;
+//    public void Bark()
+//    {
 
-        Console.WriteLine($"{name} is barking.");
-    }
-}
-class Cat : Animal
-{
-    public string color;
-    public void Meow()
-    {
-        Console.WriteLine($"{name} is meowing.");
-    }
-}
+//        Console.WriteLine($"{name} is barking.");
+//    }
+//}
+//class Cat : Animal
+//{
+//    public string color;
+//    public void Meow()
+//    {
+//        Console.WriteLine($"{name} is meowing.");
+//    }
+//}
 
 // multilevel Inheritance
 // multilevel inheritance is a type of inheritance where a class is derived from a class which is also derived from another class.
 
-class SpanishCat : Cat
-{
-    public void SpeakSpanish()
-    {
-        Console.WriteLine($"{name} dice miau.");
-    }
-}
+//class SpanishCat : Cat 
+//{
+//    public void SpeakSpanish()
+//    {
+//        Console.WriteLine($"{name} dice miau.");
+//    }
+//}
 
 
 // multiple Inheritance is not supported in C# using classes
 
 
+// *********************************************
+// Abstract Classes and Methods in C#
+// Abstract classes are classes that cannot be instantiated directly and are meant to be inherited by other classes. They can contain abstract methods, which are methods without implementation that must be implemented by derived classes.
+// *********************************************
+
+
+
+//Dog dog1 = new();
+//dog1.name = "Buddy";
+//dog1.age = 3;
+//dog1.Eat();
+//dog1.Bark();
+//dog1.Sleep();
+
+//Cat cat1 = new();
+//cat1.name = "Whiskers";
+//cat1.age = 2;
+//cat1.Eat();
+//cat1.Meow();
+//cat1.Sleep();
 
 
 
 
+//abstract class Animal
+//{
+//    public string name;
+//    public int age;
+//    public void Eat()
+//    {
+//        Console.WriteLine($"{name} is eating.");
+//    }
+//    public virtual void Sleep() { }
+//}
+
+
+
+
+//class Dog : Animal
+//{
+//    public string breed;
+//    public void Bark()
+//    {
+//        Console.WriteLine($"{name} is barking.");
+//    }
+//    public override void Sleep()
+//    {
+//        Console.WriteLine($"{name} is sleeping.");
+//    }
+//}
+
+
+//class Cat : Animal
+//{
+//    public string color;
+//    public void Meow()
+//    {
+//        Console.WriteLine($"{name} is meowing.");
+//    }
+//    public override void Sleep()
+//    {
+//        Console.WriteLine($"{name} is sleeping.");
+//    }
+
+
+//}
+// *********************************************
+
+
+
+// Interfaces in C#
+// An interface is a contract that defines a set of methods and properties that a class must implement. Interfaces are used to achieve abstraction and multiple inheritance in C#.
+
+//IDog dog1 = new Dog();
+////dog1.Name = "Buddy";
+////Console.WriteLine($"Dog Name is: {dog1.Name}");
+
+
+//dog1.Bark();
+//ICat cat1 = new Cat();
+//cat1.Meow();
+//interface IDog
+//{
+//    void Bark();
+//}
+//interface ICat
+//{
+//    void Meow();
+//}
+//class Dog : IDog
+//{
+
+
+//    public void Bark()
+//    {
+//        Console.WriteLine("Dog is barking.");
+//    }
+//}
+//class Cat : ICat
+//{
+//    public void Meow()
+//    {
+//        Console.WriteLine("Cat is meowing.");
+//    }
+//}
+// *********************************************
+
+
+// getters and setters in C#
+//Getters and setters are special methods that are used to access and modify the private fields of a class. They provide a way to control the access to the fields and can include validation logic.
+Person person1 = new();
+person1.Name = "Arif";
+Console.WriteLine($"Person Name is: {person1.Name}");
+person1.FirstName =
+    "Arif";
+person1.LastName =
+    "Khan";
+
+person1.Age = 35;
+
+Console.WriteLine($"Full Name is: {person1.FullName}");
+class Person
+{
+    private string name;
+    private string firstName;
+    private string lastName;
+    private int age;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+    public string FirstName
+    {
+        get { return firstName; }
+        set { firstName = value; }
+    }
+    public string LastName
+    {
+        get { return lastName; }
+        set { lastName = value; }
+    }
+
+    public int Age
+    {
+        get { return age; }
+        set
+        {
+            if (value < 30)
+                age = 0;
+            else
+                age = value;
+        }
+    }
+    public string FullName
+    {
+        get { return $"{firstName} {lastName} {age}"; }
+    }
+}
 
 
